@@ -24,42 +24,16 @@ const Login = () => {
     };
 
     return (
-        <div className="loginpage d-flex justify-content-center align-items-center vh-100 vw-100">
-            <form className="login-container border p-4 rounded" style={{ width: '400px' }} onSubmit={handleSubmit}>
-                <h2 className="text-center mb-4">Login</h2>
-
-                <div className="form-group mb-3">
-                    <label htmlFor="username">Username: </label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="username"
-                        placeholder="Enter your Username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        required
-                    />
+        // Login Page
+        <div className="login-page">
+            <div className="login-container">
+                <div className="image-container">
+                    <img src="./assets/Main-Logo.png" alt="Background" />
                 </div>
+                <form action="submit" className="form-container">
 
-                <div className="form-group mb-3">
-                    <label htmlFor="password">Password: </label>
-                    <input
-                        type="password"
-                        className="form-control"
-                        id="password"
-                        placeholder="Enter your Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </div>
-
-                <button type="submit" className="btn btn-custom w-100">Login</button>
-
-                <p className="text-center mt-3">
-                    Don't have an account? <a href="/registration" className="text-link">Register here</a>
-                </p>
-            </form>
+                </form>
+            </div>
         </div>
     );
 };
