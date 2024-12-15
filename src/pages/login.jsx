@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import '../css/login.css';
 
 const Login = () => {
+
+    console.log('Login component rendered')
+
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
