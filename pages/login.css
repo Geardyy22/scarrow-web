@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.login-page {
+    padding: 40px ;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #C9D3CB;
+    width: 520px;
+    height: 549px;
+}
+
+.w-bg {
+    background-image: url('../src/assets/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}

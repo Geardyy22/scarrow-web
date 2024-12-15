@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './login.css'
 
 const Login = () => {
 
@@ -37,8 +38,18 @@ const Login = () => {
                         <p>Log in to you account</p>
                     </div>
                     <div className="field-container">
-                        
+                        <div className="field-content">
                         <label htmlFor="username">email</label>
+                        <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        placeholder="Enter your email"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        required
+                    />
+                        </div>
                     </div>
                 </form>
             </div>
