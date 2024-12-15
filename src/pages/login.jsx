@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import '../css/login.css';
+import { useNavigate } from 'react-router-dom';
+import './login.css';
 
 const Login = () => {
-
-    console.log('Login component rendered')
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -31,10 +30,17 @@ const Login = () => {
         <div className="login-page">
             <div className="login-container">
                 <div className="image-container">
-                    <img src="./assets/Main-Logo.png" alt="Background" />
+                    <img src="" alt="Background" />
                 </div>
-                <form action="submit" className="form-container">
-
+                <form className="form-container">
+                    <div className="text-container">
+                        <h4>Sign in</h4>
+                        <p>Log in to you account</p>
+                    </div>
+                    <div className="field-container">
+                        
+                        <label htmlFor="username">email</label>
+                    </div>
                 </form>
             </div>
         </div>
