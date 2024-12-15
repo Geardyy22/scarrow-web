@@ -14,7 +14,7 @@ const Login = () => {
             const response = await axios.post('http://localhost:4000/api/login', { username, password });
 
             if (response.status === 200) {
-                // Store the user ID in localStorage
+                // Store the user ID in Local Storage
                 localStorage.setItem('userId', response.data.user._id);
 
                 // Navigate to the dashboard
