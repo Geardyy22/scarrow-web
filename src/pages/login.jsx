@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './login.css';
 
 const Login = () => {
 
@@ -30,7 +29,7 @@ const Login = () => {
         <div className="login-page">
             <div className="login-container">
                 <div className="image-container">
-                    <img src="" alt="Background" />
+                    <img src="./Main-Logo.png" alt="Background" />
                 </div>
                 <form className="form-container">
                     <div className="text-container">
